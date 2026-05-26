@@ -47,6 +47,11 @@ cd /tmp/workspace/HEMANTH-eng/Mobile-coding-/backend
 npm test
 ```
 
+```bash
+cd /tmp/workspace/HEMANTH-eng/Mobile-coding-/frontend
+npm run test:run
+```
+
 ## Build Frontend
 
 ```bash
