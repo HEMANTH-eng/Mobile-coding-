@@ -1,4 +1,4 @@
-import { fireEvent, render, screen, waitFor } from '@testing-library/react'
+import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import App from './App'
 
@@ -12,6 +12,7 @@ describe('App', () => {
 
   afterEach(() => {
     vi.unstubAllGlobals()
+    cleanup()
   })
 
   it('loads and renders todos from the API', async () => {
